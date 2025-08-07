@@ -12,7 +12,7 @@ Analyze whether large whale transfers (>$100K) precede or correlate with signifi
 1. **Clone the repository**
    ```sh
    git clone https://github.com/yourusername/Large-ETH-Transfers-vs-Price.git
-   cd whale-transfers-analysis
+   cd Large-ETH-Transfers-vs-Price
    ```
 
 2. **Install dependencies**
