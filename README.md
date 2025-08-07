@@ -1,14 +1,55 @@
 # Whale Transfers & Price Movements Analysis
 
-This project analyzes whether large whale transfers (>$100K) precede or correlate with significant price movements of a selected cryptocurrency token (e.g., ETH).
+Analyze whether large whale transfers (>$100K) precede or correlate with significant price movements of a selected cryptocurrency token.
 
 ## Project Structure
 
-- `test.ipynb`: Main analysis notebook. Fetches price and whale transfer data, preprocesses, merges, and visualizes relationships.
-- `result.ipynb`: Contains summary insights and visualizations from the analysis.
+- `test.ipynb`: Main analysis notebook.
+- `result.ipynb`: Summary insights and visualizations.
+
+## Setup
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/yourusername/Large-ETH-Transfers-vs-Price.git
+   cd whale-transfers-analysis
+   ```
+
+2. **Install dependencies**
+   ```sh
+   pip install pandas requests matplotlib seaborn scipy python-dotenv
+   ```
+
+3. **Configure API keys**
+   - Create a `.env` file in the project root:
+     ```
+     DUNE_API=your_dune_api_key_here
+     GECKO_API=your_coingecko_api_key_here
+     ```
+   - If you don’t have API keys, use dummy values for testing.
+
+4. **Run the notebook**
+   - Open `test.ipynb` in Jupyter or VS Code.
+   - Run all cells to reproduce the analysis.
+
+## Resources
+
+- [CoinGecko API](https://www.coingecko.com/en/api/documentation)
+- [Dune Analytics API](https://dune.com/docs/api/)
+- Example Dune Query:  
+  [Whale Transfers Query](https://dune.com/queries/5591956)
+
+## Workflow
+
+1. Fetch price and whale transfer data via APIs.
+2. Preprocess and aggregate data.
+3. Merge datasets on timestamp.
+4. Analyze correlations and visualize results.
 
 ## Key Insights
 
-- **Whale transfer amount and price change** show a moderate negative correlation, suggesting large transfers may be linked to price drops.
-- **Number of transactions and whales** are highly correlated, but both have weak relationships with price change.
-- **Further analysis** (e.g., lagged effects, event studies) is recommended for deeper insights.
+- Whale transfer amount shows a moderate negative correlation with price change.
+- Number of transactions and whales are highly correlated, but weakly related to price change.
+- Further analysis recommended for deeper insights.
+  
+*For research and educational purposes only.*
