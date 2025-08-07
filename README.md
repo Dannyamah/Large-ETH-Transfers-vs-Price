@@ -26,17 +26,18 @@ Analyze whether large whale transfers (>$100K) precede or correlate with signifi
      DUNE_API=your_dune_api_key_here
      GECKO_API=your_coingecko_api_key_here
      ```
-   - If you don’t have API keys, use dummy values for testing.
-
+   - If you don’t have API keys,
+   - Sign up on Dune, go to settings > API. Generate and copy your API Key
+   - Sign up for a CoinGecko API Account. Generate and copy your API Key
 4. **Run the notebook**
    - Open `test.ipynb` in Jupyter or VS Code.
    - Run all cells to reproduce the analysis.
 
 ## Resources
 
-- [CoinGecko API](https://www.coingecko.com/en/api/documentation)
-- [Dune Analytics API](https://dune.com/docs/api/)
-- Example Dune Query:  
+- [CoinGecko API](https://docs.coingecko.com/v3.0.1/reference/setting-up-your-api-key)
+- [Dune Analytics API](https://docs.dune.com/api-reference/overview/introduction)
+- Dune Query:  
   [Whale Transfers Query](https://dune.com/queries/5591956)
 
 ## Workflow
